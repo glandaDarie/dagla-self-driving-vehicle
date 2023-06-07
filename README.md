@@ -1,4 +1,4 @@
-# Intelligent Vehicle Documentation
+# Dagla, Intelligent Vehicle
 ##Introduction
 The Intelligent Vehicle project, developed by Glanda Darie and Teofil Dagla, is an innovative system designed to showcase intelligent features in a vehicle. This documentation provides an overview of the project, including its objectives, features, and implementation details.
 
