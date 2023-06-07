@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "360931814735",
+    "firebase_url": "https://pythonandroidstudiocomm-default-rtdb.firebaseio.com",
+    "project_id": "pythonandroidstudiocomm",
+    "storage_bucket": "pythonandroidstudiocomm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360931814735:android:0739a0076a96f04713693a",
+        "android_client_info": {
+          "package_name": "com.glandadarieteofilapplicenta.licenta_glandadarieteofil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360931814735-gb1f8kq29o2son1lha8evqpskdlr5mok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDky58E6v2olEJKxd-xGBQL1SssfW0sdw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360931814735-gb1f8kq29o2son1lha8evqpskdlr5mok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

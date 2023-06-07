@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_with_black_background"
+    tools:context=".MoveCarWithAutopilot">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="174dp"
+        android:layout_height="85dp"
+        android:layout_x="101dp"
+        android:layout_y="470dp"
+        android:text="CAMERA IS ON!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <ImageView
+        android:id="@+id/imageView_camera"
+        android:layout_width="316dp"
+        android:layout_height="281dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="181dp"
+        android:layout_x="22dp"
+        android:layout_y="165dp"
+        android:gravity="center"
+        android:src="@drawable/camera_is_on_photo" />
+</AbsoluteLayout>

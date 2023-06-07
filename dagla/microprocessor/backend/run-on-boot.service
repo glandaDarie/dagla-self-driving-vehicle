@@ -1,0 +1,12 @@
+[Unit]
+Description=Licenta server
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/darie/Desktop/licenta/
+ExecStart=sudo python3 /home/darie/Desktop/licenta/server.py
+Restart=always
+RestartSec=90
+
+[Install]
+WantedBy=multi-user.target

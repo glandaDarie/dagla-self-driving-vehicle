@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_with_black_background"
+    tools:context=".MoveCarWithTests">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:columnCount="2"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/buttonTestOne"
+
+            android:tag="test up and down"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/up_and_down" />
+
+        <ImageButton
+            android:id="@+id/buttonTestTwo"
+            android:tag="test down and up"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/down_and_up" />
+
+        <ImageButton
+            android:id="@+id/buttonTestThree"
+            android:tag="test left and right"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="0"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/left_and_right" />
+
+        <ImageButton
+            android:id="@+id/buttonTestFour"
+            android:tag="test right and left"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/right_and_left" />
+
+        <ImageButton
+            android:id="@+id/buttonTestFive"
+            android:tag="test spin fast to slow"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/spin_fast_to_slow" />
+
+        <ImageButton
+            android:id="@+id/buttonTestSix"
+            android:tag="test spin slow to fast"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/spin_slow_to_fast" />
+
+        <ImageButton
+            android:id="@+id/buttonTestSeven"
+            android:tag="test random command"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/random_command" />
+
+        <ImageButton
+            android:id="@+id/buttonTestEight"
+            android:tag="test choose command"
+            android:layout_width="10dp"
+            android:layout_height="19dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:background="@drawable/background_buttons_test"
+            app:srcCompat="@drawable/choose_command" />
+    </GridLayout>
+
+</RelativeLayout>

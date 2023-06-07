@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_with_black_background"
+    tools:context=".MoveCarFingerDetection">
+
+    <ImageView
+        android:id="@+id/imageViewDisplayHandGesture"
+        android:layout_width="331dp"
+        android:layout_height="481dp"
+        android:layout_x="7dp"
+        android:layout_y="94dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</AbsoluteLayout>

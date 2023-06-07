@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Autopilot help</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./licenta help_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="file:///C:/Users/darie/Downloads/style.css" rel="stylesheet">  
+    <link href="./licenta help_files/icon_family=Material+Icons" rel="stylesheet">  
+    <link rel="stylesheet" href="./licenta help_files/bootstrap.min(1).css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    #navbar 
+    {
+        overflow: hidden;
+        position: fixed;
+        z-index: 990;
+        top: 0;
+        width:100%;
+    }
+
+    #main 
+    {
+      padding: 16px;
+      margin-top: 30px;
+      height: 1500px;
+    }
+
+    .logo-image
+    {
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -6px;
+    }
+
+    .logo-imageCheckout
+    {
+        width: 100px;
+        height: 105px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 1px;
+    }
+
+    #searchTextBoxStyle 
+    {
+        border-radius: 18px;
+        padding: 20px; 
+        width: 300px;
+        height: 60px;    
+        border: 2px solid grey;
+    }
+
+    #lettersStyle
+    {
+        color:grey;
+        padding: 1px;
+        font-size: 30px;
+        display: block;
+        width: 150px;
+        float: left;
+    }
+
+    #lettersStyle:hover 
+    {
+        background-color: #555555;
+        padding: 1px;
+        font-size: 30px;
+        display: block;
+        width: 150px;
+        float: left;
+    }
+
+    .btn-outline-success 
+    {
+        background-color: white;
+        color: grey;
+        border: 2px solid grey;
+      }
+
+    #btn-back-to-top 
+    {
+        display: none;
+        position: fixed;
+        bottom: 60px;
+        right: 10px;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color:lightgray;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    #btn-top-to-back
+    {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        z-index: 100;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color:lightgray;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    #btn-back-to-top:hover 
+    {
+        background-color: #406895;
+    }
+
+    #btn-top-to-back:hover 
+    {
+        background-color: #406895;
+    }
+
+    .arrow 
+    {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+
+    .up 
+    {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+      
+    .down 
+    {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .center-video
+    {
+      text-align: center;
+      display: block;
+    }
+
+
+    .socialMediaLinks img
+    {
+      height: 39px;
+      margin: 60px;
+      cursor: pointer; 
+      max-width:100%;
+    } 
+
+    .socialMediaLinks 
+    {
+        text-align: center;
+    }
+
+    .box 
+    {
+      position: relative;
+      display: flex;
+      background-color: #1a1a1a;
+      width: 70px;
+      height: 44px;
+      border-radius: 35px;
+      justify-content: start;
+    }
+
+    .box .btn 
+    {
+       position: absolute;
+       width: 70px;
+       height: 44px;
+       background-color: red;
+       opacity: 0;
+       z-index: 1;
+       cursor: pointer;
+    }
+
+    .box span 
+    {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      top: 7px;
+      margin : 0 5px;
+    }
+
+    .show 
+    {
+      justify-content: end !important;
+      background-color: #fff !important;
+    }
+
+    .s-show 
+    {
+      background-color: #1a1a1a !important;
+    }
+
+    input[type=submit]
+    {
+      border: none;
+      border-width: 0;
+      box-shadow: none;
+      background-color: transparent;
+      color:dimgray;
+    }
+
+    input[type=submit] :hover
+    {
+      background-color: #1a1a1a;
+      color: lightgray;
+    }
+ </style></head>
+
+  
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+            <div class="logo-image" onclick="window.location.reload();">
+                <img src="file:///C:/Users/darie/Downloads/%7B%7B%20carLogo%20%7D%7D" class="img-fluid">
+            </div>
+       </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+              <form class="nav-link" action="file:///C:/takePhoto" aria-current="page" id="lettersStyle" href="#">
+                <input type="submit" value="Capture">
+              </form>
+           </li> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+                <form class="nav-link" action="file:///C:/stopVideo" aria-current="page" id="lettersStyle" href="#">
+                  <input type="submit" value="Stop">
+                </form> 
+            </li>
+           &nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+              <form class="nav-link" action="file:///C:/reloadVideo" onclick="window.location.reload();" aria-current="page" id="lettersStyle" href="#">
+                <input type="submit" value="Reload">
+              </form>
+           </li> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+              <form class="nav-link" action="file:///C:/index_contact" aria-current="page" id="lettersStyle" href="#">
+                <input type="submit" value="Contact">
+              </form>
+           </li> 
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <li class="nav-item active">
+            <form class="nav-link" action="file:///C:/index_help" aria-current="page" id="lettersStyle" href="#">
+              <input type="submit" value="Help">
+            </form>
+           </li> 
+          </ul>
+          <form class="d-flex return false">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchTextBoxStyle">
+            <button class="btn btn-outline-success" id="SearchButtonStyle" onclick="redirect();return false;" type="text">Press </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <script>
+              function redirect() 
+              { 
+                var EMPTY_STRING = "";
+                var stringReadText = document.getElementById("searchTextBoxStyle").value;
+                var stringRead = stringReadText.replace(/^\s+|\s+$/gm,''); 
+                if(stringRead.localeCompare("Capture") == 0 || stringRead.localeCompare("capture") == 0 || stringRead.localeCompare("CAPTURE") == 0) { alert("Can't do this!"); document.getElementById("searchTextBoxStyle").value = EMPTY_STRING; } 
+                else if(stringRead.localeCompare("Stop") == 0 || stringRead.localeCompare("stop") == 0 || stringRead.localeCompare("STOP") == 0) { alert("Can't do this!"); document.getElementById("searchTextBoxStyle").value = EMPTY_STRING; } 
+                else if(stringRead.localeCompare("Reload") == 0 || stringRead.localeCompare("reload") == 0 || stringRead.localeCompare("RELOAD") == 0) { window.location.href="http://192.168.1.106:5000/" } 
+                else if(stringRead.localeCompare("Contact") == 0 || stringRead.localeCompare("contact") == 0 || stringRead.localeCompare("CONTACT") == 0) { window.location.href="http://192.168.1.106:5000/index_contact" } 
+                else if(stringRead.localeCompare("Help") == 0 || stringRead.localeCompare("help") == 0 || stringRead.localeCompare("HELP") == 0) { window.location.href="http://192.168.1.106:5000/index_help" } 
+                else { alert("This word does not exist in this site!"); document.getElementById("searchTextBoxStyle").value = EMPTY_STRING; } 
+              }
+              </script>
+            </form>
+            <div class="box">
+              <div class="btn" id="color"></div>
+              <span></span>
+            </div>
+            <script> 
+                  let box = document.querySelector('.box');
+                  let btn = document.querySelector('.box .btn');
+                  let body = document.querySelector('body');
+                  let span = document.querySelector('.box span');
+
+                  btn.addEventListener('click', function()
+                  {
+                      box.classList.toggle('show');
+                      span.classList.toggle('s-show');
+                      body.classList.toggle('s-show');
+                  })
+            </script>
+            <script> 
+              document.getElementById('color').onclick = changeColor; 
+              var currentColor = "black";
+              function changeColor() 
+              { 
+                if(currentColor == "black")
+                { 
+                  document.body.style.color = "white";
+                  currentColor = "white";
+                } 
+                else 
+                {
+                  document.body.style.color = "black";
+                  currentColor = "black";
+                } 
+             }
+            </script>
+          </div>
+        </div></nav>
+        <style>
+            body 
+            {
+                background-color: #f6f6f6;
+            }
+            
+            .box-inside 
+            {
+                width: 800px;
+                margin: 80px auto; 
+                background-color: #fff;
+                border-radius: 7px;
+                box-shadow: 1px 2px 4px rgba(0,0,0,.3);  
+                width:100%;
+            }
+
+            .box-inside .heading
+            {
+                background-color: darkgray;
+                border-radius: 7px 7px 0px 0px;
+                padding: 10px;
+                color: #fff;
+                text-align: center;
+                font-family: "Rubik";
+            }
+
+            .faqs 
+            {
+                padding: 0px 20px 20px;
+            }
+
+            ::-webkit-details-marker 
+            {
+                float: right;
+                margin-top: 3px;
+            }
+
+            .details
+            {
+                background-color: #f6f6f6;
+                padding: 10px 20px;
+                border-radius: 7px;
+                margin-top: 20px;
+                font-family: "Rubik";
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+
+            details summary
+            {
+                outline: none;
+                font-size: 26px;
+                font-style: italic;
+                font-weight: 450;
+            }
+        </style>
+
+        <br><br><br><br><br>
+        <div class="box-inside">
+          <h1 class="heading">FAQs</h1>
+          <div class="faqs">
+            <details>
+              <summary> What is this website all about? </summary>
+              <h4 class="text">The main reason that I created the website is so that I can watch the recording for any problems that can appear on the signal detection algorithm.</h4>
+            </details>
+            <details>
+              <summary> What programming languages did you use for this when creating the website? </summary>
+              <h4 class="text">For backend I used python and javascript and for the frontend part I used HTML and CSS.
+              </h4>
+            </details>
+            <details>
+              <summary> What programming languages did you use for the mobile app? </summary>
+              <h4 class="text">For the mobile app I used for backend java, python and firebase and for the frontend part only XML. 
+              </h4>
+            </details>
+            <details>
+              <summary> What programming languages did you use for the microcontroller part (Arudino)? </summary>
+              <h4 class="text">For this only C/C++.</h4>
+            </details>
+            <details>
+              <summary> Any difficulties that you encounter while creating this project? </summary>
+              <h4 class="text">Hmm one in particular... I had some problems when creating the finger detection algorithm because I firstly wanted to do it with a file
+                but the data will not update immediately and so I did it with firebase because of the real time property. </h4>
+            </details>
+            <details>
+              <summary> Any weird bugs you had while creating the website? </summary>
+              <h4 class="text">Yup, weird bugs with threads. I couldn't add a delay in form of sleep in python flask when making a connection between two endpoints so I created my custom 
+                one (had problems with this because of the photo when capturing it did not load the frame correcly so I needed to wait 100/150 miliseconds to load).</h4>
+            </details>
+            <details>
+              <summary> How much time did you spend on making this project? </summary>
+              <h4 class="text">I worked on it for like 4 to 5 months with minimum of 4 hours of code in a day.</h4>
+            </details>
+            <details>
+              <summary> What was the most fun part in doing this? </summary>
+              <h4 class="text">The machine learning part I think (the finger detection and signal detection), but also the usage of threads when trying to stop and reload the program in the site.</h4>
+            </details>
+          </div>
+        </div>
+
+     <button onclick="backToTop()" id="btn-back-to-top">
+       <i class="arrow up"></i>
+       </button>
+     <button onclick="backToEnd()" id="btn-top-to-back">
+       <i class="arrow down"></i>
+       </button>  
+
+     <script>
+       var mybutton1 = document.getElementById("btn-top-to-back");
+       var mybutton2 = document.getElementById("btn-back-to-top");
+
+       window.onscroll = function () 
+       {
+          scrollFunction();
+       };
+
+       function scrollFunction()
+       {
+         mybutton1.style.display = "block";
+         mybutton2.style.display = "block";
+       };
+          
+       function backToTop() 
+       {
+         document.documentElement.scrollTop = 0;
+         document.body.scrollTop = 0;
+       };
+
+       function backToEnd() 
+       {
+         document.body.scrollTop = window.screen.height+4000;
+         document.documentElement.scrollTop = window.screen.height+4000;
+       }; 
+      </script>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <br<br>
+    <div class="socialMediaLinks">
+      <a href="https://www.facebook.com/darie.glanda">
+      <img src="file:///C:/Users/darie/Downloads/%7B%7B%20facebookIcon%20%7D%7D" alt="facebook" style="max-width:100%"> 
+      </a>
+
+      <a href="https://www.instagram.com/darie.glanda/">
+      <img src="file:///C:/Users/darie/Downloads/%7B%7B%20instagramIcon%20%7D%7D" alt="instagram" style="max-width:100%">
+      </a>
+      
+      <a href="https://twitter.com/PeterSt33397883">
+      <img src="file:///C:/Users/darie/Downloads/%7B%7B%20twitterIcon%20%7D%7D" alt="twitter" style="max-width:100%">
+      </a> 
+    </div>
+</br<br></body></html>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoveCarButtons"
+    android:background="@drawable/white_with_black_background"
+    tools:ignore="Deprecated">
+
+    <ImageButton
+        android:id="@+id/imageButton_goUp"
+        android:layout_width="109dp"
+        android:layout_height="98dp"
+        android:layout_x="123dp"
+        android:layout_y="120dp"
+        app:srcCompat="@drawable/image_button_go_up"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_goDown"
+        android:layout_width="109dp"
+        android:layout_height="98dp"
+        android:layout_x="123dp"
+        android:layout_y="317dp"
+        app:srcCompat="@drawable/image_button_go_down"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_goLeft"
+        android:layout_width="109dp"
+        android:layout_height="98dp"
+        android:layout_x="12dp"
+        android:layout_y="220dp"
+        app:srcCompat="@drawable/image_button_go_left"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_goRight"
+        android:layout_width="109dp"
+        android:layout_height="98dp"
+        android:layout_x="238dp"
+        android:layout_y="220dp"
+        app:srcCompat="@drawable/image_button_go_right"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <Button
+        android:id="@+id/buttonMiddle"
+        android:layout_width="109dp"
+        android:layout_height="98dp"
+        android:layout_x="124dp"
+        android:layout_y="219dp"
+        android:backgroundTint="#8B8989"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <TextView
+        android:id="@+id/textViewPWM"
+        android:layout_width="108dp"
+        android:layout_height="47dp"
+        android:layout_x="27dp"
+        android:layout_y="499dp"
+        android:textSize="22sp"
+        android:background="#A6ACAF"
+        android:text=""
+        android:gravity="center_horizontal|center_vertical"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="559dp" />
+
+    <Button
+        android:id="@+id/buttonIncrementPwm"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_x="163dp"
+        android:layout_y="457dp"
+        android:text="Increment" />
+
+    <Button
+        android:id="@+id/buttonDecrementPwm"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:layout_x="163dp"
+        android:layout_y="518dp"
+        android:text="Decrement" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_joystick"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_x="82dp"
+        android:layout_y="0dp"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/joystick_animation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_facebook"
+        android:tag="facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_x="90dp"
+        android:layout_y="620dp"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/facebook_animation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_instagram"
+        android:tag="instagram"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_x="140dp"
+        android:layout_y="613dp"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/instagram_animation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_twitter"
+        android:tag="twitter"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_x="210dp"
+        android:layout_y="622dp"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/twitter_animation" />
+
+</AbsoluteLayout>

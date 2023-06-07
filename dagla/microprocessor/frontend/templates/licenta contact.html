@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Autopilot contact</title>
+    
+    <link rel="stylesheet" href="./licenta contact_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./licenta contact_files/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./licenta contact_files/bootstrap.min(1).css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="file:///C:/Users/darie/Downloads/style.css" rel="stylesheet">  
+    <link href="./licenta contact_files/icon_family=Material+Icons" rel="stylesheet"> 
+  <style>
+    #navbar 
+    {
+        overflow: hidden;
+        position: fixed;
+        z-index: 990;
+        top: 0;
+        width:100%;
+    }
+
+    #main 
+    {
+      padding: 16px;
+      margin-top: 30px;
+      height: 1500px;
+    }
+
+    .logo-image
+    {
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -6px;
+    }
+
+    .logo-imageCheckout
+    {
+        width: 100px;
+        height: 105px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 1px;
+    }
+
+    #searchTextBoxStyle 
+    {
+        border-radius: 18px;
+        padding: 20px; 
+        width: 300px;
+        height: 60px;    
+        border: 2px solid grey;
+    }
+
+    #lettersStyle
+    {
+        color:grey;
+        padding: 1px;
+        font-size: 30px;
+        display: block;
+        width: 150px;
+        float: left;
+    }
+
+    #lettersStyle:hover 
+    {
+        background-color: #555555;
+        padding: 1px;
+        font-size: 30px;
+        display: block;
+        width: 150px;
+        float: left;
+    }
+
+    .btn-outline-success 
+    {
+        background-color: white;
+        color: grey;
+        border: 2px solid grey;
+      }
+
+    #btn-back-to-top 
+    {
+        display: none;
+        position: fixed;
+        bottom: 60px;
+        right: 10px;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color:lightgray;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    #btn-top-to-back
+    {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        z-index: 100;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color:lightgray;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    #btn-back-to-top:hover 
+    {
+        background-color: #406895;
+    }
+
+    #btn-top-to-back:hover 
+    {
+        background-color: #406895;
+    }
+
+    .arrow 
+    {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+
+    .up 
+    {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+      
+    .down 
+    {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .center-video
+    {
+      text-align: center;
+      display: block;
+    }
+
+
+    .socialMediaLinks img
+    {
+      height: 39px;
+      margin: 60px;
+      cursor: pointer; 
+      max-width:100%;
+    } 
+
+    .socialMediaLinks 
+    {
+        text-align: center;
+    }
+
+    .box 
+    {
+      position: relative;
+      display: flex;
+      background-color: #1a1a1a;
+      width: 70px;
+      height: 44px;
+      border-radius: 35px;
+      justify-content: start;
+    }
+
+    .box .btn 
+    {
+       position: absolute;
+       width: 70px;
+       height: 44px;
+       background-color: red;
+       opacity: 0;
+       z-index: 1;
+       cursor: pointer;
+    }
+
+    .box span 
+    {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      top: 7px;
+      margin : 0 5px;
+    }
+
+    .show 
+    {
+      justify-content: end !important;
+      background-color: #fff !important;
+    }
+
+    .s-show 
+    {
+      background-color: #1a1a1a !important;
+    }
+
+    input[type=submit]
+    {
+      border: none;
+      border-width: 0;
+      box-shadow: none;
+      background-color: transparent;
+      color:dimgray;
+    }
+
+    input[type=submit] :hover
+    {
+      background-color: #1a1a1a;
+      color: lightgray;
+    }
+
+    body  
+    {
+      background-color: darkgray;
+    }
+
+   .contact 
+   {
+      font-weight: weightOfFont;
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow:hidden;
+      background: url(backgroundPhoto.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .contact .content 
+    {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .contact .content h2
+     {
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .contact .content p 
+    {
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .container 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+    }
+
+    .container .contactInfo 
+    {
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+
+    .container .contactInfo .box 
+    {
+        position:relative;
+        padding:0px 0px;
+        display: flex;
+        padding-bottom: 70px;
+    }
+
+    .container .contactInfo .box .icon
+    {
+        min-width: 60px;
+        height: 60px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+
+    .container .contactInfo .box .text 
+    {
+        display:flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+
+
+    .container .contactInfo .box .text h2 
+    {
+        font-weight: 500;
+        color: black; 
+    }
+
+    .contactForm 
+    {
+        width:40%;
+        padding:40px;
+        background: #fff;
+    }
+
+    .contactForm h2 
+    {
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .contactForm .inputBox 
+    {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea 
+    {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+
+    .contactForm .inputBox span
+     {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+
+    .contactForm .inputBox input:focus ~ span,
+    .contactForm .inputBox input:valid ~ span,
+    .contactForm .inputBox textarea:focus ~ span,
+    .contactForm .inputBox textarea:valid ~ span 
+    {
+        color: #00bcd4;
+        font-size: 14px;
+        transform:translateY(-20px);
+    }
+
+    .contactForm .inputBox input[type="submit"] 
+    {
+        width: 100px;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 991px)
+     {
+        .contact 
+        {
+            padding: 50px;
+        }
+        .container 
+        {
+            flex-direction: column;
+        }
+        .container .contactInfo
+         {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+      }
+      p 
+      {
+        font-size: 11px;
+      }
+
+      h5 
+      {
+        font-size: 16px;
+        color: white;
+      } 
+ </style></head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+            <div class="logo-image" onclick="window.location.reload();">
+                <img src="file:///C:/Users/darie/Downloads/%7B%7B%20carLogo%20%7D%7D" class="img-fluid">
+            </div>
+       </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+              <form class="nav-link" action="file:///C:/takePhoto" aria-current="page" id="lettersStyle" href="#">
+                <input type="submit" value="Capture">
+              </form>
+           </li> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+                <form class="nav-link" action="file:///C:/stopVideo" aria-current="page" id="lettersStyle" href="#">
+                  <input type="submit" value="Stop">
+                </form> 
+            </li>
+           &nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+              <form class="nav-link" action="file:///C:/reloadVideo" onclick="window.location.reload();" aria-current="page" id="lettersStyle" href="#">
+                <input type="submit" value="Reload">
+              </form>
+           </li> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item active">
+              <form class="nav-link" action="file:///C:/index_contact" aria-current="page" id="lettersStyle" href="#">
+                <input type="submit" value="Contact">
+              </form>
+           </li> 
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <li class="nav-item active">
+            <form class="nav-link" action="file:///C:/index_help" aria-current="page" id="lettersStyle" href="#">
+              <input type="submit" value="Help">
+            </form>
+           </li> 
+          </ul>
+          <form class="d-flex return false">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchTextBoxStyle">
+            <button class="btn btn-outline-success" id="SearchButtonStyle" onclick="redirect();return false;" type="text">Press </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <script>
+              function redirect() 
+              { 
+                var EMPTY_STRING = "";
+                var stringReadText = document.getElementById("searchTextBoxStyle").value;
+                var stringRead = stringReadText.replace(/^\s+|\s+$/gm,''); 
+                if(stringRead.localeCompare("Capture") == 0 || stringRead.localeCompare("capture") == 0 || stringRead.localeCompare("CAPTURE") == 0) { alert("Can't do this!"); document.getElementById("searchTextBoxStyle").value = EMPTY_STRING; }
+                else if(stringRead.localeCompare("Stop") == 0 || stringRead.localeCompare("stop") == 0 || stringRead.localeCompare("STOP") == 0) { alert("Can't do this!"); document.getElementById("searchTextBoxStyle").value = EMPTY_STRING; } 
+                else if(stringRead.localeCompare("Reload") == 0 || stringRead.localeCompare("reload") == 0 || stringRead.localeCompare("RELOAD") == 0) { window.location.href="http://192.168.1.106:5000/" } 
+                else if(stringRead.localeCompare("Contact") == 0 || stringRead.localeCompare("contact") == 0 || stringRead.localeCompare("CONTACT") == 0) { window.location.href="http://192.168.1.106:5000/index_contact" } 
+                else if(stringRead.localeCompare("Help") == 0 || stringRead.localeCompare("help") == 0 || stringRead.localeCompare("HELP") == 0) { window.location.href="http://192.168.1.106:5000/index_help" } 
+                else { alert("This word does not exist in this site!"); document.getElementById("searchTextBoxStyle").value = EMPTY_STRING; } 
+              }
+              </script>
+            </form>
+            <div class="box">
+              <div class="btn" id="color"></div>
+              <span></span>
+            </div>
+            <script> 
+                  let box = document.querySelector('.box');
+                  let btn = document.querySelector('.box .btn');
+                  let body = document.querySelector('body');
+                  let span = document.querySelector('.box span');
+
+                  btn.addEventListener('click', function()
+                  {
+                      box.classList.toggle('show');
+                      span.classList.toggle('s-show');
+                      body.classList.toggle('s-show');
+                  })
+            </script>
+            <script> 
+              document.getElementById('color').onclick = changeColor; 
+              var currentColor = "black";
+              function changeColor() 
+              { 
+                if(currentColor == "black")
+                { 
+                  document.body.style.color = "white";
+                  currentColor = "white";
+                } 
+                else 
+                {
+                  document.body.style.color = "black";
+                  currentColor = "black";
+                } 
+             }
+            </script>
+          </div>
+        </div></nav>
+
+        <form class="contact_form" action="file:///C:/Users/darie/Downloads/index_contact%20(1).html#">
+          <selection class="contact">
+            <div class="content">
+              <h1>Contact Me</h1>
+              <h5> You can contact me for the code or if you have any questions regarding the website.</h5>
+            </div>
+           <br><br><br>
+            <div class="container">
+              <div class="contactInfo">
+                <div class="box">
+                  <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> </div>
+                    <div class="text">
+                      <h2>Address</h2>
+                      <p>Piata Victoriei nr. 7,<br>Timisoara, Romania,<br>11000</p>
+                  </div>
+                </div>
+                <br<br><br><br>
+                <div class="box">
+                  <div class="icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+                    <div class="text">
+                      <h2>Phone</h2>
+                      <p>+40 (733) 209 624</p>
+                  </div>
+                </div>
+                <br>
+                <div class="box">
+                  <div class="icon"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </div>
+                    <div class="text">
+                      <h2>Email</h2>
+                      <p>darieglanda@outlook.com<br>darie.glanda@student.upt.ro<br></p>
+                  </div>
+                </div>
+              </br<br></div>
+              <div class="contactForm">
+                
+                  <h2>Send Message</h2>
+                  <div class="inputBox">
+                    <input class="Fullname" text="text" name="" required="required" id="textBoxFullName">
+                    <span>Full Name</span>
+                  </div>
+                  <div class="inputBox">
+                    <input class="Email" text="text" name="" required="required" id="textBoxEmail">
+                    <span>Email</span>
+                  </div>
+                  <div class="inputBox">
+                    <textarea class="Message" name="" required="required" id="textareaSomeText"></textarea>
+                    <span>Type your Message...</span>
+                  </div>
+                  <div class="inputBox">
+                    <input type="submit" onclick="checkTextBoxes();return false;" name="" value="Send">
+                  </div>
+                
+              </div>
+            </div>
+          </selection></form>
+        
+
+        <script src="./licenta contact_files/smtp.js.download"></script>
+      <script>
+        function checkFirstLetterUpper(stringFullName) 
+        {
+          return stringFullName.charAt(0) == stringFullName.charAt(0).toUpperCase(); 
+        }
+
+        function returnLettersAfterSpace(stringFullName)
+         {
+          var arrayFullName = [];
+          var emptyString = "";
+          var pos = 0;
+          if(!stringFullName.includes(emptyString)) 
+          {
+            return arrayFullName;
+          }
+          else 
+          {
+            for(var i = 0; i < stringFullName.length; ++i)
+            {
+              if(stringFullName.charAt(i) == ' ')
+              {
+                arrayFullName.push(pos); 
+              }
+              pos += 1; 
+              continue; 
+            }
+          }
+          return arrayFullName; 
+        }
+
+        function checkFirstLetterAfterSpace(stringFullName,arrayFullName)
+         {
+          if(arrayFullName.length <= 0) 
+           {
+            return false;
+          }
+          for(var i = 0; i < arrayFullName.length; ++i) 
+          {
+            var pos = arrayFullName[i]; 
+            if(stringFullName.charAt(pos+1) != stringFullName.charAt(pos+1).toUpperCase()) 
+            {
+              return false; 
+            }
+          }
+          return true; 
+        }
+        
+        function checkEmail(stringFullName) 
+        {
+          if(!stringFullName.includes('@')) 
+          {
+            return false;
+          }
+          if(!stringFullName.includes('.')) 
+          {
+            return false;
+          }
+          if(!stringFullName.includes('com') && !stringFullName.includes('ro')) 
+          {
+            return false;
+          }
+          if(stringFullName.includes('yahoo') || stringFullName.includes('gmail') || stringFullName.includes('outlook') || stringFullName.includes("hotmail") ||
+          stringFullName.includes("hotmail") || stringFullName.includes("upt")) 
+          {
+            return true;
+          }
+          return false;
+        }
+
+        function checkText(stringYourMessage)
+         {
+          if(stringYourMessage.length < 20) 
+          {
+            return false;
+          }
+          return true;
+        }
+        
+        function sendEmail(secureToken,destination,source,subject,someMessage) 
+        {
+          Email.send({
+          SecureToken : secureToken,
+          To : destination,
+          From : source,
+          Subject : subject,
+          Body: someMessage
+        }).then(message => alert(message));
+        }
+
+        function checkTextBoxes() 
+        {
+          var EMPTY_STRING = "";
+          var stringFullName = document.getElementById("textBoxFullName").value;
+          var stringEmail = document.getElementById("textBoxEmail").value;
+          var stringYourMessage = document.getElementById("textareaSomeText").value;
+          if(!checkFirstLetterUpper(stringFullName)) 
+           {
+              alert("First letter is not upper!"); 
+              document.getElementById("textBoxFullName").value = EMPTY_STRING;
+              document.getElementById("textBoxEmail").value = EMPTY_STRING;
+              document.getElementById("textareaSomeText").value = EMPTY_STRING;
+              return;
+          }
+          var arrayFullName = returnLettersAfterSpace(stringFullName);
+          if(!checkFirstLetterAfterSpace(stringFullName,arrayFullName)) 
+          {
+              alert("Other letters are not right!"); 
+              document.getElementById("textBoxFullName").value = EMPTY_STRING;
+              document.getElementById("textBoxEmail").value = EMPTY_STRING;
+              document.getElementById("textareaSomeText").value = EMPTY_STRING;
+              return;
+          }
+          if(!checkEmail(stringEmail))
+           {
+              alert("Mail is not correct!"); 
+              document.getElementById("textBoxFullName").value = EMPTY_STRING;
+              document.getElementById("textBoxEmail").value = EMPTY_STRING;
+              document.getElementById("textareaSomeText").value = EMPTY_STRING;
+              return;
+          }
+          if(!checkText(stringYourMessage))
+          {
+              alert("Text must contain atleast 20 characters!"); 
+              document.getElementById("textBoxFullName").value = EMPTY_STRING;
+              document.getElementById("textBoxEmail").value = EMPTY_STRING;
+              document.getElementById("textareaSomeText").value = EMPTY_STRING;
+              return;
+          }
+          var choice = confirm("Data successfully entered, press okay to continue!");
+          if(!choice) 
+          {
+            alert("You are back!");
+            return;
+          }
+          var source = stringEmail;
+          var destination = "darieglanda@outlook.com";
+
+          const form = document.querySelector('.contact_form'),
+          fullName = document.querySelector('.FullName'),
+          email = document.querySelector('.Email'),
+          mesasge = document.querySelector('.Message');
+
+          var secureToken = "bdb40da9-0d41-4738-8ffe-0abbcda8ac68";
+          var destination = "darieglanda@outlook.com";
+          var source = stringEmail;
+          var subject = "This is the subject";
+          var someMessage = stringYourMessage;
+          sendEmail(secureToken,destination,source,subject,someMessage);
+          document.getElementById("textBoxFullName").value = EMPTY_STRING;
+          document.getElementById("textBoxEmail").value = EMPTY_STRING;
+          document.getElementById("textareaSomeText").value = EMPTY_STRING;
+        } 
+      </script>
+
+
+        <button onclick="backToTop()" id="btn-back-to-top">
+          <i class="arrow up"></i>
+          </button>
+        <button onclick="backToEnd()" id="btn-top-to-back">
+          <i class="arrow down"></i>
+          </button>  
+   
+        <script>
+          var mybutton1 = document.getElementById("btn-top-to-back");
+          var mybutton2 = document.getElementById("btn-back-to-top");
+   
+          window.onscroll = function () 
+          {
+             scrollFunction();
+          };
+   
+          function scrollFunction()
+          {
+            mybutton1.style.display = "block";
+            mybutton2.style.display = "block";
+          };
+             
+          function backToTop() 
+          {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          };
+   
+          function backToEnd() 
+          {
+            document.body.scrollTop = window.screen.height+4000;
+            document.documentElement.scrollTop = window.screen.height+4000;
+          }; 
+         </script>
+   
+       <br<br>
+       <div class="socialMediaLinks">
+         <a href="https://www.facebook.com/darie.glanda">
+         <img src="file:///C:/Users/darie/Downloads/%7B%7B%20facebookIcon%20%7D%7D" alt="facebook" style="max-width:100%"> 
+         </a>
+   
+         <a href="https://www.instagram.com/darie.glanda/">
+         <img src="file:///C:/Users/darie/Downloads/%7B%7B%20instagramIcon%20%7D%7D" alt="instagram" style="max-width:100%">
+         </a>
+         
+         <a href="https://twitter.com/PeterSt33397883">
+         <img src="file:///C:/Users/darie/Downloads/%7B%7B%20twitterIcon%20%7D%7D" alt="twitter" style="max-width:100%">
+         </a> 
+       </div>
+
+       <script src="./licenta contact_files/bootstrap.bundle.min.js.download" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       
+   
+</br<br></body></html>
