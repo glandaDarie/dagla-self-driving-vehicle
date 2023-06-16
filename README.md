@@ -34,6 +34,4 @@ Integrated Development Environments (IDEs): Popular IDEs such as PyCharm, Thonny
 ## Conclusion and Future Development
 The Intelligent Vehicle project showcases a range of intelligent features, from hand gesture detection to autonomous driving. The current implementation provides a solid foundation, but there is room for further development. Future enhancements may include the acquisition of a Raspberry Pi board with 8 GB RAM to improve video processing speed and accuracy in signal detection.
 
-The project's documentation and code are available on GitHub, providing an opportunity for collaboration and contributions from the open-source community.
-
 Feel free to modify and expand upon this documentation to suit your specific project requirements.
